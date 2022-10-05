@@ -1,0 +1,17 @@
+<table>
+  <tr>
+    <th>Nom</th>
+    <th>Adresse</th>
+    <th>Note</th>
+    <th>Evaluation</th>
+    <th>Details</th>
+  </tr>
+  <tr *ngFor="let restaurant of restaurants">
+    <td>{{restaurant.nom}}</td>
+    <td>{{restaurant.adresse}}</td>
+    <td>{{restaurant.moyenne}}</td>
+    <td>{{restaurant.evaluations}}</td>
+    <td><button routerLink="{{restaurant}}"></button> </td>
+  </tr>
+
+</table>
